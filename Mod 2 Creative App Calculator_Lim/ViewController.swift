@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputOne: UITextField!
     @IBOutlet weak var inputTwo: UITextField!
     
+    @IBOutlet weak var slider: UISlider!
     @IBOutlet weak var output: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -65,6 +66,10 @@ class ViewController: UIViewController {
                 output.text = String(sqrt(pow(unwrappedOne, 2.0) + pow(unwrappedTwo, 2.0)))
             }
         }
+    }
+    @IBAction func sliderChanged(_ sender: Any) {
+        view.backgroundColor =  UIColor(hue:CGFloat(slider.value),saturation:1,brightness:1,alpha:1)
+        
     }
     
 }

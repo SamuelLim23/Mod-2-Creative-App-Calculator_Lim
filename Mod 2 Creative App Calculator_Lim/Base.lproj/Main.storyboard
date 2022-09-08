@@ -97,10 +97,18 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="xA6-sa-TR3">
+                                <rect key="frame" x="101" y="555" width="213" height="31"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Rvm-JV-URM"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="xA6-sa-TR3" firstAttribute="top" secondItem="ph3-Y4-8Ad" secondAttribute="bottom" constant="138" id="1z8-ss-lER"/>
+                            <constraint firstItem="xA6-sa-TR3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5IG-sD-rIO"/>
                             <constraint firstItem="sWJ-Uc-Im8" firstAttribute="top" secondItem="8qn-q7-0a8" secondAttribute="bottom" constant="53" id="82p-ut-kJN"/>
                             <constraint firstItem="sWJ-Uc-Im8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8BD-CB-S9h"/>
                             <constraint firstItem="8qn-q7-0a8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.731884" id="8md-wL-lTM"/>
@@ -116,12 +124,14 @@
                             <constraint firstItem="ph3-Y4-8Ad" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rdq-iv-URx"/>
                             <constraint firstItem="k1k-fN-DyL" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.031808" id="tSu-GM-BtL"/>
                             <constraint firstItem="8qn-q7-0a8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tu3-Ta-Mfm"/>
+                            <constraint firstItem="xA6-sa-TR3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v6q-8B-0GK"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="inputOne" destination="Aqj-RA-dVf" id="DRK-Mj-uLd"/>
                         <outlet property="inputTwo" destination="k1k-fN-DyL" id="eUl-8a-M0P"/>
                         <outlet property="output" destination="ph3-Y4-8Ad" id="i2B-gP-Sha"/>
+                        <outlet property="slider" destination="xA6-sa-TR3" id="Fo2-Ha-leM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
